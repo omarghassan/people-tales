@@ -107,37 +107,44 @@
 
 <body>
     <!-- PHP header would be here -->
-    <!-- <?php
+    <?php
     require_once 'views/layout/public/header.php'
-    ?> -->
+    ?>
 
     <!-- Header Start -->
     <section>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active ">
-                    <img src="./public/img/landing/first.webp" class="d-block w-100" height="500" alt="...">
+                <div class="carousel-item active">
+                    <img src="./public/img/landing/freepik__upload__1836-Photoroom.jpg" class="d-block w-100" height="500" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <div class="bg-dark bg-opacity-75 px-5 py-4 rounded" style="max-width: 80%;">
+                            <h1 class="text-white display-4 fw-bold mb-3">Welcome To People Tales</h1>
+                            <p class="text-white fs-5 mb-4">Discover unique stories and cultural heritage from around the world. Explore our curated collection of authentic cultural products and artisan crafts.</p>
+                            <a class="btn btn-primary btn-lg px-4 py-2" href="#explore" style="background-color: #e0d4b8; border-color: #e0d4b8; color: #333; font-size: 1.2rem;">Explore Cultural Products</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./public/img/landing/Untitled_design.webp" class="d-block w-100" height="500" alt="...">
-                </div>
+                <!-- <div class="carousel-item">
+                <img src="./public/img/landing/Untitled_design.webp" class="d-block w-100" height="500" alt="...">
+            </div> -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
         </div>
     </section>
     <!-- Header End -->
 
     <!-- Countries Start -->
-    <section class="container my-5">
+    <section class="container my-5" id="explore">
         <h2 class="text-center mb-5">Countries</h2>
         <div class="row row-cols-3 row-cols-md-3 row-cols-lg-5 g-5">
             <div class="col">
@@ -250,9 +257,9 @@
                                         <?= htmlspecialchars($product['category_name']) ?>
                                     </div>
                                     <div class="product-overlay">
-                                        <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
+                                        <!-- <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
                                             <i class="bi bi-link"></i>
-                                        </a>
+                                        </a> -->
                                         <form action="/cart/add" method="POST" class="d-inline">
                                             <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
                                             <button type="submit" class="btn btn-light btn-square rounded-circle m-1">
@@ -290,9 +297,9 @@
                                             <?php endfor; ?>
                                             <small class="text-muted ms-1">(<?= mt_rand(10, 99) ?>)</small>
                                         </div>
-                                        <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
+                                        <!-- <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
                                             <i class="bi bi-cart-plus me-1"></i> Add
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -364,9 +371,9 @@
                                         <?= htmlspecialchars($product['category_name']) ?>
                                     </div>
                                     <div class="product-overlay">
-                                        <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
+                                        <!-- <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
                                             <i class="bi bi-link"></i>
-                                        </a>
+                                        </a> -->
                                         <form action="/cart/add" method="POST" class="d-inline">
                                             <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
                                             <button type="submit" class="btn btn-light btn-square rounded-circle m-1">
@@ -404,9 +411,9 @@
                                             <?php endfor; ?>
                                             <small class="text-muted ms-1">(<?= mt_rand(10, 99) ?>)</small>
                                         </div>
-                                        <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
+                                        <!-- <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
                                             <i class="bi bi-cart-plus me-1"></i> Add
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -445,11 +452,9 @@
     <!-- About Us End -->
 
     <!-- PHP footer would be here -->
-    <!-- <?php
+    <?php
     require_once 'views/layout/public/footer.php';
-    ?> -->
-
-    <!-- <script src="public/js/newlsletter-validation.js"></script> -->
+    ?>
 
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->

@@ -113,9 +113,9 @@ header("Pragma: no-cache");
                     <li class="nav-item">
                         <a class="nav-link" href="/cart"><i class="ri-shopping-cart-2-fill"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/fav"><i class="ri-heart-fill"></i></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/contact"><i class="ri-customer-service-fill"></i></a>
                     </li>

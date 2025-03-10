@@ -11,6 +11,7 @@ require_once __DIR__ . "/controllers/CategoryController.php";
 require_once __DIR__ . "/controllers/CartController.php";
 require_once __DIR__ . "/controllers/AdminController.php";
 require_once __DIR__ . "/controllers/CheckoutController.php";
+require_once __DIR__ . "/controllers/ProfileController.php";
 
 $router = new Router();
 
@@ -53,6 +54,10 @@ $router->get('/cart/clear', 'CartController@clear');
 $router->get('/checkout', 'CheckoutController@index');
 $router->post('/checkout/process', 'CheckoutController@process');
 $router->get('/checkout/confirmation/{order_id}', 'CheckoutController@confirmation', 'checkout.confirmation');
+
+// Update these routes in index.php:
+$router->get('/profile', 'ProfileController@index', 'profile.index');
+$router->post('/profile/update', 'ProfileController@update', 'profile.update');
 
 
 // ---------------------------------------------------------------

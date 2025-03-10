@@ -86,12 +86,12 @@
                     <span>Orders</span>
                 </a>
             </li>
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
                 <a class="nav-link " href="/">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Sign out</span>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Pages Collapse Menu -->
             <!-- <li class="nav-item">

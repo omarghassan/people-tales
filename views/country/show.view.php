@@ -158,7 +158,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="section-title bg-white text-center px-3 mb-2" id="product">Our Selection</p>
+                <p class="section-title bg-white text-center px-3 mb-2" id="product">Explore Products</p>
                 <h2 class="mb-5"><?= htmlspecialchars($country['name']) ?>'s Products</h2>
             </div>
 
@@ -186,7 +186,7 @@
                     $counter++;
                 ?>
                     <div class="col-md-6 col-lg-3 product-item wow fadeInUp" data-wow-delay="<?= 0.1 * ($counter % 4 + 1) ?>s" data-category="<?= htmlspecialchars($product['category_name']) ?>">
-                        <div class="product-card h-100 rounded overflow-hidden position-relative">
+                        <div class="product-card rounded overflow-hidden position-relative" style="height: 460px;">
                             <div class="product-img position-relative" style="height: 250px; overflow: hidden;">
                                 <img src="<?= htmlspecialchars($product['product_image_url']) ?>"
                                     alt="<?= htmlspecialchars($product['name']) ?>"
@@ -195,9 +195,9 @@
                                     <?= htmlspecialchars($product['category_name']) ?>
                                 </div>
                                 <div class="product-overlay">
-                                    <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
+                                    <!-- <a class="btn btn-light btn-square rounded-circle m-1" href="/products/<?= $product['id'] ?>">
                                         <i class="bi bi-link"></i>
-                                    </a>
+                                    </a> -->
                                     <form action="/cart/add" method="POST" class="d-inline">
                                         <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
                                         <input type="hidden" name="quantity" value="1">
@@ -212,7 +212,7 @@
                                     <h5 class="mb-0"><?= htmlspecialchars($product['name']) ?></h5>
                                     <span class="product-price text-success fw-bold">$<?= htmlspecialchars($product['price']) ?></span>
                                 </div>
-                                <p class="text-muted mb-3" style="height: 60px; overflow: hidden;"><?= htmlspecialchars($product['description']) ?></p>
+                                <p class="text-muted mb-3" style="height: 80px; overflow: hidden;"><?= htmlspecialchars($product['description']) ?></p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="product-rating">
                                         <?php
@@ -236,9 +236,9 @@
                                         <?php endfor; ?>
                                         <small class="text-muted ms-1">(<?= mt_rand(10, 99) ?>)</small>
                                     </div>
-                                    <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
+                                    <!-- <a href="#" class="add-to-cart btn btn-sm btn-success rounded-pill px-3">
                                         <i class="bi bi-cart-plus me-1"></i> Add
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>

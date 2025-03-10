@@ -96,7 +96,7 @@ require_once 'views/layout/public/header.php'
                     </div>
                     
                     <div class="text-center mt-4">
-                        <a href="/products" class="btn btn-primary">Continue Shopping</a>
+                        <a href="/countries" class="btn btn-primary">Continue Shopping</a>
                     </div>
                 </div>
             </div>

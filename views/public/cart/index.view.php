@@ -7,7 +7,7 @@ require_once 'views/layout/public/header.php'
     
     <?php if (empty($items)): ?>
         <div class="alert alert-info">
-            Your cart is empty. <a href="/products">Continue shopping</a>.
+            Your cart is empty. <a href="/countries">Continue shopping</a>.
         </div>
     <?php else: ?>
         <div class="table-responsive">
@@ -55,7 +55,7 @@ require_once 'views/layout/public/header.php'
         </div>
         
         <div class="d-flex justify-content-between m-4">
-            <a href="/products" class="btn btn-success">Continue Shopping</a>
+            <a href="/countries" class="btn btn-success">Continue Shopping</a>
             <div>
                 <a href="/cart/clear" class="btn btn-danger" onclick="return confirm('Are you sure you want to clear your cart?')">Clear Cart</a>
                 <a href="/checkout" class="btn btn-primary">Proceed to Checkout</a>
